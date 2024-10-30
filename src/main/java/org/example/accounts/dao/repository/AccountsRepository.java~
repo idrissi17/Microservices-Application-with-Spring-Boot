@@ -1,0 +1,2 @@
+package org.example.accounts.dao.repository;public interface AccountsRepository {
+}
