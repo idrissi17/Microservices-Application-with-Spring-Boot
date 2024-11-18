@@ -1,0 +1,12 @@
+FROM openjdk:17-jdk-slim
+
+LABEL maintainer="CARDS-SERVICE"
+
+WORKDIR /app
+
+COPY target/CARDS-SERVICE-0.0.1-SNAPSHOT.jar /app/CARDS-SERVICE-0.0.1-SNAPSHOT.jar
+
+
+EXPOSE 9000
+
+ENTRYPOINT ["java", "-jar", "CARDS-SERVICE-0.0.1-SNAPSHOT.jar"]
