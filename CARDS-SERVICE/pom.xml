@@ -12,6 +12,7 @@
     <artifactId>CARDS-SERVICE</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>CARDS-SERVICE</name>
+    <packaging>jar</packaging>
     <description>CARDS-SERVICE</description>
     <url/>
     <licenses>

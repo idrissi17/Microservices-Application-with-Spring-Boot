@@ -11,6 +11,7 @@
     <groupId>org.example</groupId>
     <artifactId>LOANS-SERVICE</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>LOANS-SERVICE</name>
     <description>LOANS-SERVICE</description>
     <url/>
