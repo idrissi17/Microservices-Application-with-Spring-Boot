@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "CONFIG-SERVER"
+  profiles:
+#    active: native
+    active: git
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: "classpath:/config"
+          ## For local Configuration file externally location
+          #search-locations: "file:./config"
+        git:
+          uri: "https://github.com/idrissi17/Microservices-Application-with-Spring-Boot.git"
+          default-label: master
+          timeout: 5
+          clone-on-start: true
+server:
+  port: 8071
+
+
+

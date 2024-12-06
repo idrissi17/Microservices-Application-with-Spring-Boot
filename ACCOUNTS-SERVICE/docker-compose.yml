@@ -1,0 +1,37 @@
+services:
+  accounts:
+    image: "badr2025/accounts:v1"
+    container_name: "ACCOUNTS-SERVICE"
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: "700m"
+    networks:
+      - demo-network
+  loans:
+    image: "badr2025/loans:v1"
+    container_name: "LOANS-SERVICE"
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: "700m"
+    networks:
+      - demo-network
+  cards:
+    image: "badr2025/cards:v1"
+    container_name: "CARDS-SERVICE"
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: "700m"
+    networks:
+      - demo-network
+networks:
+  demo-network:
+    driver: "bridge"
