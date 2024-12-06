@@ -1,0 +1,8 @@
+build:
+  version: "1.0.0"
+
+accounts:
+  message: "Welcome to Accounts service related local APIs"
+  contactDetails:
+    name: "userDeveloper"
+    email: "userDeveloper@gmail.com"

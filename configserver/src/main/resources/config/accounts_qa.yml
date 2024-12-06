@@ -1,0 +1,8 @@
+build:
+  version: "2.0.0"
+
+accounts:
+  message: "Welcome to Accounts service related QA APIs"
+  contactDetails:
+    name: "userQA"
+    email: "userQA@gmail.com"

@@ -2,11 +2,13 @@ package org.example.accountsservice;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
+import org.example.accountsservice.dto.AccountsContactInfoDto;
 import org.example.accountsservice.dto.CustomerDto;
 import org.example.accountsservice.service.IAccountsService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.jdbc.repository.config.EnableJdbcAuditing;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -14,6 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.util.List;
 
 @SpringBootApplication
+@EnableConfigurationProperties(value = {AccountsContactInfoDto.class})
 @EnableJdbcAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
         info = @Info(
